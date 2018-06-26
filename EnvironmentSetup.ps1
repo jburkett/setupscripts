@@ -1,13 +1,21 @@
-# Install Chocolatey
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+# Basic Setup
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
+
+# Install PowerShell modules
+# Chocolatey
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+# Nuget
+Install-PackageProvider NuGet -MinimumVersion '4.6.2' -Force
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 
 # Using Chocolatey
-choco install chocolateygui
-choco install googlechrome
+choco install chocolateygui -y
+choco install git.install -y
+choco install conemu -y
+choco install poshgit
+# TODO: choco install googlechrome # NOTE: Bad checksum
 # TODO: bulk-crap-uninstaller
 # TODO: virtualclonedrive
-# TODO: conemu
-# TODO: git
 # TODO: putty.install (?)
 # TODO: Git-Credential-Manager-for-Windows
 # TODO: poshgit
