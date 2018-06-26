@@ -2,7 +2,8 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Using Chocolatey
-# TODO: chocolateygui
+choco install chocolateygui
+choco install googlechrome
 # TODO: bulk-crap-uninstaller
 # TODO: virtualclonedrive
 # TODO: conemu
@@ -18,7 +19,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 # TODO: dotnetcore-windowshosting
 # TODO: dotnetcore-sdk
 # TODO: adobereader
-# TODO: googlechrome
 # TODO: firefox
 # TODO: virtualbox (?)
 # TODO: itunes
