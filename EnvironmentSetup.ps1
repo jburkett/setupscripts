@@ -13,6 +13,12 @@ choco install chocolateygui -y
 choco install git.install -y
 choco install conemu -y
 choco install poshgit
+
+# Java environment
+# choco install jdk8
+# choco install gradle
+# choco install tomcat -y
+
 # TODO: choco install googlechrome # NOTE: Bad checksum
 # TODO: bulk-crap-uninstaller
 # TODO: virtualclonedrive
