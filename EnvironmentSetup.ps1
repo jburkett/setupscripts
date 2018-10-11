@@ -11,8 +11,12 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 # Using Chocolatey
 choco install chocolateygui -y
 choco install git.install -y
+choco install git-credential-manager-for-window
 choco install conemu -y
 choco install poshgit
+
+# Setup dotnet
+choco install dotnetcore-sdk
 
 # Java environment
 # choco install jdk8
@@ -24,14 +28,12 @@ choco install poshgit
 # TODO: virtualclonedrive
 # TODO: putty.install (?)
 # TODO: Git-Credential-Manager-for-Windows
-# TODO: poshgit
 # TODO: vscode
 # TODO: nuget.commandline
 # TODO: nodejs.install (Node + NPM)
 # TODO: Python
 # TODO: dotnetcore-runtime
 # TODO: dotnetcore-windowshosting
-# TODO: dotnetcore-sdk
 # TODO: adobereader
 # TODO: firefox
 # TODO: virtualbox (?)
@@ -40,10 +42,10 @@ choco install poshgit
 # TODO: azure-cli
 # TODO: webpi (MS Web Platform Installer)
 # TODO: steam
-# TODO: spotify
 # TODO: lastpass
 # TODO: signal
 # TODO: docker (?)
+# TODO: 7-zip
 
 # Using NPM
 # TODO: angular/cli
