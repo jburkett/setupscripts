@@ -14,6 +14,8 @@ choco install git.install -y
 choco install git-credential-manager-for-window
 choco install conemu -y
 choco install poshgit
+# choco install wsl
+# choco install wsl-ubuntu-1804
 
 # Setup dotnet
 choco install dotnetcore-sdk
