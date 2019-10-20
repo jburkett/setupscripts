@@ -11,9 +11,9 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 # Using Chocolatey
 choco install chocolateygui -y
 choco install git.install -y
-choco install git-credential-manager-for-window
+choco install git-credential-manager-for-window -y
 choco install conemu -y
-choco install poshgit
+choco install poshgit -y
 # choco install wsl
 # choco install wsl-ubuntu-1804
 
